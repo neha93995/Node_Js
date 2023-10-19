@@ -1,0 +1,23 @@
+------------------Native node module------
+
+=> What is native node module?
+
+1. Native node module: sometimes referred to as C/C++ addons, are extensions to the Node.js runtime that are written in languages like C or C++ rather than javaScript. 
+
+2. These modules are compiled to binary code and can be loaded into your Node.js applications. 
+
+3. They allow you to access system-level functionality and interact with external libraries or hardware, which might not be possible with pure javascript.
+
+
+-------fs module ----------
+
+1. In node.js the 'fs' (File System) module is a built-in module that provides an interface for working with the file system. 
+
+
+2. It allows you to perform various file-related operations, such as reading from and writing to files, creating directories, and managing file metadata. 
+
+3. the 'fs' module is an essential part of many Node.js applications, expecially those that involve file I/O tasks.
+
+
+
+

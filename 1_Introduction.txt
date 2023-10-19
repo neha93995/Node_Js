@@ -1,0 +1,50 @@
+
+---------Developer of Node js----------
+
+Node.js was written initially by Ryan Dahl in 2009.
+
+
+----------What is Node js ------------
+
+1. Node js is an open source and cross plateform runtime environment built on Chrome's V8 javascript engine for executing javascript code outside of a browser. 
+
+2. it provides an event-driven, non-blocking I/O and cross-plateform runtime environment for building highly scalable server-side applications using javascript.
+
+
+------- ----note------------ 
+
+1. Node.js is a "Runtime Environment"  for Javascript, and it's neither a framework nor a Programming language.
+
+2. open source - software for which the original source code is made freely available and may be redistrubuted and modifie.
+
+3. Cross Plateform:  a type of a software/ applications/ Programe that works on various operating systems or devices.
+
+
+Features of Node js
+
+1. Easy Scalability: it allows Node js to provide a server-side runtime environment that compiles and executes javascript at lightning speeds.
+
+2. Real Time web apps: we can work with real time. (chat, gaming, constant social media update, eCommerce, etc.)
+
+
+3. Easy to learn and code: it's easy to learn and code because it uses javascript.
+
+4. Fast Suite: operations can be done quickly like reading or writing in the database, network connection, or file system.
+
+5. Data Streaming: In NodeJs HTTP request and response are considered as two separate events. 
+
+
+
+---------------------Node REPL-----------------
+
+node REPL : Node Read Evaluate Print Loop
+
+
+=> What is node REPL?
+it is a programming language environment (Basically a console window) that takes single expression as user input and returns the result back to the console after execution. 
+
+Note:  The REPL session provides a convenient way to quickly test simple javascript code.
+
+for node REPL in terminal write the command "node" then we can show a { > } that the symbol represents node REPL
+
+

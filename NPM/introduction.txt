@@ -1,0 +1,23 @@
+------------NPM-----------------------
+
+NPM -- Node Package Manager
+
+1. NPM is a World's Largest Software Registry(Library)
+2. The Registry Contains over 800,000 code packages.
+3. Open-source developers use npm to share Software.
+4. Many organizations also use npm to manage private development.
+5. NPM is free to use.
+
+
+NPM includes a CLI (Command Line Client) that can be used to download and install software
+
+> npm install <packages>
+
+--- All npm packages are defined in files called package.json.
+--- the content of package.json must be written in json.
+
+
+
+
+
+
