@@ -1,7 +1,13 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-/Express
+
 # dependencies
 NPM/node_modules
+Express/bandNameGenerator/node_modules
+Express/expressIntro/node_modules
+Express/middleware/node_modules
+Express/postman/node_modules
+Express/secretProject/node_modules
+
 /.pnp
 .pnp.js
 
