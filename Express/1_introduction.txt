@@ -1,0 +1,192 @@
+------------------Express.js --------------------
+
+=> Express js is a framework of javascript for Node.js
+
+1. Express.js is a small Framework that works on top of Node.js web server fucntionality to simplify its APIs and add helpful new features.
+
+2. It makes it easier to organize your application's functionality with middle-ware and routing. 
+
+3. it adds helpful utilities to Node.jsHttp objects and facilitates the rendering of dynamic HTTP objects.
+
+
+Note:- ExpressJs is a "Web Framework"
+
+-------Why Express-------
+
+> Develops Node.js web applications quickly and easily.
+
+> it's simple to set up and personalise.
+
+> Allows you to define application routes using HTTP methods and URLs.
+
+>includes a number of middleware modules that can be used to execute additional requests and responses activities.
+
+> Allow you to specify a middleware for handling errors.
+
+
+------------Installing Express------
+
+>  npm i express --save
+
+
+
+
+-------------- Creating an Express Server -------
+
+1. Create  Directory.
+2. Create index.js file.
+3. Initialise NPM.
+4. Install the Express Package.
+5. Write server application in index.js.
+6. Start Server.
+
+
+-----------Step by step Implementation:-----------
+
+step 1: Write this command in your terminal, to create a nodeJs application, becasue our express server will wrok inside the node application.
+>npm init -y
+
+step 2: Install necessagry dependencies for our application
+> npm install express
+
+step 3: create index.js
+
+step 4: you can use anything require or import method for using express
+> import express from "express"   {ES6 feature, usable when you wite ("type": "module") inside the package.json file}
+> const express = require('express');
+
+step 5: create an app by calling express() function provided by the express framework.
+> const app = express();
+
+step 6: Now call listen() function, it requires path and callback as an argument. it start listening to the conncection on the specified path, the default host is localhost.
+the callback function gets executed either on the successful start of the server or due to an error.
+
+>app.listen(3000, (err)=>{
+    if(!err)
+    {
+        console.log("server is running on port 3000");
+    }
+    else{
+        console.log("Error" err.message);
+
+    }
+})
+
+
+step 7. after a succesful run if you try to open the URL (localhost:3000) on the browser it will show "cannot Get/" because we can not configured any route on this application yet.
+
+step 8. Now we will set all the routes for our application
+> app.get('./hello',(req, res)=>{
+    res.set('content-type', 'text/html');
+    res.status(200).send("<h1>hello Express</h1>");
+})
+
+
+------------------------Express Fucntion ----------------------
+
+app.listen():
+
+The app.listen() function is used to vind and listen to the connections on the specified host and port.
+
+
+app.get(): 
+
+1. get() is a function that tells the server what to 
+do when a get request at the given route is called. 
+
+2. get() function routes the HTTP Get requests to the path which is being specified with the specified callback function.
+
+
+
+
+
+-------------------what is localhost ------------------------
+
+1. A localhost is a standard hostname given to the computer or device used to access it. 
+2. localhost is always your computer. 
+3. your computer is talking to itself when you call the localhost.
+4. Developers use the local host to test web applications and programs.
+5. The IP address of localhost is 127:0:0:1
+
+
+----------- what is port-------------
+
+A port is an interface between the computer and the external devices.
+for example we can connect hard drives, printers to the computer with the help of ports. 
+
+ports are part of the transport layer in the OSI model, which is responsible for end-to-end communication between devices across a network.
+
+
+note:-  way to view open network ports on your window system.
+
+
+Example:- 
+
+HTTP    -  80
+HTTPS   -  443
+SMTP    -  25
+DNS     -  53
+MysqlDB -  3306
+
+
+for window
+> netstat -ano | findstr "LISTENING"
+
+for mac
+> sudo lsof -i -p -n | grep LISTEN
+
+
+
+---------------------HTTP-----------------
+
+Hyper Text Transfer Protocol:
+
+http is like a set of rules that computers follow when they want to share information on the internet. Think of it as a language they use to talk to each other.
+
+=> HTTP is what makes all this communication possible.
+
+Http Requests:
+
+1. Get      - Request Resource
+2. POST     - Sending Resource
+3. PUT      - replace Resource
+4. PATCH    - patch up a Resource
+5. DELETE   - delete resource
+
+
+
+
+---------------------What is Nodemon--------------
+
+nodemon is a tool that helps develop Node.js based application by automatically restarting the node application when file changes in the Directory are detected. 
+
+nodemon does not requre any additional changes to your code or method of development.
+
+nodemon is a replacement wrapper for node. to use nodemon, replace the word node on the command line when executing your script.
+
+
+
+--------------HTTP Response Status Codes ---------------------
+
+
+HTTP response status codes indicate whether a specific HTTP request has been succesfully completed. 
+
+Response are grouped in five classes:
+
+1. Informational Response  (100 -199)
+2. Successful Response  (200 - 299)
+3. Redirection message   (300 - 399)
+4. Client error responses  (400 - 499)
+5. Server error responses  - (500 - 599)
+
+Note:-  the status codes listed below are defined by {"RFC 9110"}
+
+----some status code-----
+
+404   --  not found
+200   --  success
+
+
+
+------------------------Postman-----------------------
+
